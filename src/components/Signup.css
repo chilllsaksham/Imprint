@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   background: url('../assets/pexels-philippedonn-1169754.jpg');
   background-repeat: no-repeat;
@@ -9,8 +10,7 @@ body {
   height: 100%;
 }
 
-.container {
-
+.container_s {
   display: flex !important;
   flex-direction: column;
   justify-content: center;
@@ -21,17 +21,16 @@ body {
   margin: auto;
 }
 
-.container > form {
+.container_s > form {
   width: 70%;
   border: 1px solid #dfdfdf;
   padding: 20px;
   border-radius: 5px;
-  background: #fff;
   background: rgba(255, 255, 255, 0.1); /* Transparent background */
   backdrop-filter: blur(10px);           /* Blur effect */
   -webkit-backdrop-filter: blur(10px);   /* Safari support */
-  border-radius: 10px;                   /* Optional: to make the edges round */
-  padding: 20px;                         /* Padding for spacing */
+  border-radius: 10px;                   /* Round edges */
+  padding: 20px;                         /* Spacing */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -48,14 +47,14 @@ pre {
   font-size: larger;
 }
 
-button {
+button{
   background: #05b462 !important;
   padding: 5px;
   border-radius: 10px;
   width: 100%;
 }
 
-button:hover{
+button:hover {
   background-color: #038548 !important;
 }
 
@@ -63,8 +62,8 @@ p {
   color: rgb(255, 0, 0);
 }
 
-.text {
-  color:white;
+.text_s {
+  color: white;
   margin: 2px;
   padding: 5px;
 }

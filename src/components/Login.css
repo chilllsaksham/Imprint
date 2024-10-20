@@ -1,4 +1,4 @@
-.login-container {
+.login-container_s {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,29 +18,28 @@
   border: 1px solid white;
 }
 
-.ui.form {
-  width: 300px; 
+.ui_s.form_s {
+  width: 300px;
   padding: 0px;
-  
 }
 
-.field input {
-  width: 100%; 
-  padding: 12px; 
+.field_s input {
+  width: 100%;
+  padding: 12px;
   border: none;
   border-radius: 5px;
 }
 
-button {
+button_s {
   background-color: #05b462;
-  padding: 12px; 
+  padding: 12px;
   border-radius: 5px;
   width: 100%;
   color: white;
   font-weight: bold;
 }
 
-.text {
+.text_s {
   margin-top: 10px;
   color: white;
 }

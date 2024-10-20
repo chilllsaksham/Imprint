@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import './Signup.css' ;
+import './Signup.css';
 
 function Signup() {
     const initialValues = {
@@ -55,17 +55,17 @@ function Signup() {
     };
 
     return (
-        <div className="bgImg">
-            <div className="container">
+        <div className="bgImg_s">
+            <div className="container_s">
                 {Object.keys(formErrors).length === 0 && isSubmit ? (
-                    <div className="ui message success">Signed in successfully</div>
+                    <div className="ui_s message_s success_s">Signed in successfully</div>
                 ) : null}
 
                 <form onSubmit={handleSubmit}>
                     <h1>Sign Up</h1>
-                    <div className="ui divider"></div>
-                    <div className="ui form">
-                        <div className="field">
+                    <div className="ui_s divider_s"></div>
+                    <div className="ui_s form_s">
+                        <div className="field_s">
                             <label>Username</label>
                             <input
                                 type="text"
@@ -76,7 +76,7 @@ function Signup() {
                             />
                         </div>
                         <p>{formErrors.username}</p>
-                        <div className="field">
+                        <div className="field_s">
                             <label>Email</label>
                             <input
                                 type="text"
@@ -87,7 +87,7 @@ function Signup() {
                             />
                         </div>
                         <p>{formErrors.email}</p>
-                        <div className="field">
+                        <div className="field_s">
                             <label>Password</label>
                             <input
                                 type="password"
@@ -98,7 +98,7 @@ function Signup() {
                             />
                         </div>
                         <p>{formErrors.password}</p>
-                        <div className="field">
+                        <div className="field_s">
                             <label>Confirm Password</label>
                             <input
                                 type="password"
@@ -109,9 +109,9 @@ function Signup() {
                             />
                         </div>
                         <p>{formErrors.confirmPassword}</p>
-                        <button className="fluid ui button blue">Submit</button>
+                        <button className="fluid_s ui_s button_s blue_s">Submit</button>
                     </div>
-                    <div className="text">
+                    <div className="text_s">
                         Already have an account? <Link to="/login-page">Login</Link>
                     </div>
                 </form>
